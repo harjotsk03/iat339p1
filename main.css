@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=SUSE:wght@100..800&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+section{
+  padding: 2rem 4rem;
+}
+
+.mainHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.secondaryHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 2.25rem;
+  margin-top: 2rem;
+}
+
+.subHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.75rem;
+  margin-top: 2rem;
+}
+
+.secondarySubHeading{
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+}
+
+.blue{
+ background-color: #3f89dd;
+ display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+ padding: 1rem 1.5rem;
+ justify-content: end;
+ color: white;
+}
+
+.orange{
+  background-color: #FF7200;
+  display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+ padding: 1rem 1.5rem;
+ justify-content: end;
+ color: white;
+}
+
+.secondary{
+  background-color: #D6DDE7;
+  display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+ padding: 1rem 1.5rem;
+ justify-content: end;
+ color: black;
+}
+
+.bgDark{
+  background-color: #0a0d10;
+  display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+ padding: 1rem 1.5rem;
+ justify-content: end;
+ color: white;
+}
+
+.bgLight{
+  background-color: #eff2f5;
+  display: flex;
+ flex-direction: column;
+ gap: 0.2rem;
+ padding: 1rem 1.5rem;
+ justify-content: end;
+ color: black;
+}
+
+.colorPalleteBox{
+  width: 16.4rem;
+  height: 10rem;
+}
+
+.colourContainer{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.paragraphText{
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.1rem;
+}
+
+.fontContainer{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.inputContainer{
+  display: flex;
+  gap: 0.3rem;
+  flex-direction: column;
+  max-width: 20rem;
+}
+
+.nav{
+  width: 93vw;
+  background: #eff2f5;
+  height: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navButton{
+  color: #0a0d10;
+  background-color: transparent;
+  padding: 1rem;
+  border: none;
+  transition: 0.3s ease-in-out all;
+  padding: 1.25rem;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Poppins";
+  font-size: 1rem;
+}
+
+.navButton:hover,
+.navButton:focus{
+  background-color: #3f89dd;
+  cursor: pointer;
+  color: #D6DDE7;
+}
+
+.primaryCTA{
+  background-color: #3f89dd;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  transition: ease-in-out 0.3s all;
+  width: max-content;
+}
+
+.primaryCTA:hover,
+.primaryCTA:focus{
+  background-color: #2d5787;
+  color: white;
+  cursor: pointer;
+}
+
+.secondaryCTA{
+  background-color: #FF7200;
+  color: white;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  transition: ease-in-out 0.3s all;
+  width: max-content;
+}
+
+.secondaryCTA:hover,
+.secondaryCTA:focus{
+  background-color: #974f15;
+  color: white;
+  cursor: pointer;
+}
+
+.altCTA{
+  background-color: #D6DDE7;
+  color: black;
+  border: none;
+  padding: 0.5rem 1.5rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  transition: ease-in-out 0.3s all;
+  width: max-content;
+}
+
+.altCTA:hover,
+.altCTA:focus{
+  background-color: #8d9195;
+  color: white;
+  cursor: pointer;
+}
+
+.inTextLink{
+  color: #3f89dd;
+  transition: 0.3s ease-in-out all;
+}
+
+.inTextLink:hover,
+.inTextLink:focus{
+  color: #FF7200;
+}
+
+.input{
+  padding: 0.6rem 0.8rem;
+  border: solid 0.15rem #3f89dd;
+  background-color: transparent;
+  font-family: "Poppins";
+  font-size: 1rem;
+  border-radius: 0.4rem;
+  outline: none;
+}
+
+.input:hover,
+.input:focus{
+  border: solid 0.15rem #FF7200;
+}
+
+.image{
+  width: 20rem;
+  height: 20rem;
+  object-fit: contain;
+  overflow: hidden;
+  object-position: center;
+  transition: 0.3s ease-in-out all;
+}
+
+.image:focus,
+.image:hover{
+  border-radius: 4rem;
+}
+
+.navLeft{
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  padding-left: 1rem;
+}
+
+.navLogo{
+  width: 3%;
+  height: max-content;
+  margin-right: 1rem;
+}
