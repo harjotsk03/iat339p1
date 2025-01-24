@@ -1,40 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="utf-8">
     <title>HTML Exercise Harjot Singh</title>
 
-    <link href="./main.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-
+    <link href="./main.css" rel="stylesheet" />
+    <link href="./mobile.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
-
     <header>
-      <section>
-      <h1 class="mainHeading">MotorVault Style Guide</h1>
-      <p class="paragraphText">Our style guide used to build the MotorVault website.</p>
-
-      <nav class="nav">
+      <nav class="navReal desktop">
         <div class="navLeft">
-          <a class="navButton" href="#paletteFonts">Palette & Fonts</a>
-          <a class="navButton" href="#interactive_elements">Text Elements</a>
-          <a class="navButton" href="#combined_elements">Combined Elements</a>
-          <a class="navButton" href="#product_description">Product Description</a>
-          <a class="navButton" href="#citations">Citations</a>
+          <a class="navButtonActive" href="./index.html">Colour & Fonts</a>
+          <a class="navButton" href="./interactiveElements.html"
+            >Interactive Elements</a
+          >
+          <a class="navButton" href="./combinedElements.html"
+            >Combined Elements</a
+          >
+          <a class="navButton" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
         </div>
       </nav>
+      <nav class="navReal mobile">
+        <button id="navToggle" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <a id="closeButton" class="navButtonActive" href="javascript:void(0)">X Close</a>
+          <a class="navButtonActive" href="./index.html">Colour & Fonts</a>
+          <a class="navButton" href="./interactiveElements.html">Interactive Elements</a>
+          <a class="navButton" href="./combinedElements.html">Combined Elements</a>
+          <a class="navButton" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
+        </div>
+      </nav>
+      <section class="header">
+        <h1 class="mainHeading mt-extra">Unboxed Living Style Guide</h1>
+        <p class="paragraphText">
+          Our style guide used to build the Unboxed Living website.
+        </p>
       </section>
     </header>
 
-    <section id="paletteFonts">
-       <h2 class="secondaryHeading" class="secondaryHeading">Color Palette & Fonts</h2>
-       <h3 class="subHeading">Colours</h3>
-       <div class="colourContainer">
-        <div class="blue colorPalleteBox">
+    <section id="paletteFonts" class="page">
+      <h2 class="secondaryHeading mt-small">Color Palette</h2>
+      <div class="colourContainer mt-s">
+        <div class="blue colorPalleteBox roundedLeft">
           <p class="secondarySubHeading">Primary</p>
           <p class="paragraphText">#3f89dd</p>
         </div>
@@ -50,143 +70,49 @@
           <p class="secondarySubHeading">BG Light</p>
           <p class="paragraphText">#eff2f5</p>
         </div>
-        <div class="bgDark colorPalleteBox">
+        <div class="bgDark colorPalleteBox roundedRight">
           <p class="secondarySubHeading">BG Dark</p>
           <p class="paragraphText">#0a0d10</p>
         </div>
-       </div>
-       <h3 class="subHeading">Fonts</h3>
-       <div class="fontContainer">
-        <p class="mainHeading">Poppins Bold (Heading)</p>
-        <p class="secondaryHeading">Poppins SemiBold (Heading)</p>
-        <p class="subHeading">Poppins Medium (Heading)</p>
-        <p class="secondarySubHeading">Poppins Medium (Heading)</p>
-        <p class="paragraphText">Poppins Regular (Paragraph)</p>
-       </div>
-    </section>
-    
-    <section id="interactive_elements">
-       <h2 class="secondaryHeading">Interactive Elements</h2>
-       <h3 class="subHeading">Link within Paragraph</h3>
-       <p class="paragraphText">Lorem ipsum dolor sit amet <a class="inTextLink" href="#">Link</a> consectetur adipisicing elit. Maiores eaque voluptatum assumenda consequuntur sapiente! Quod praesentium mollitia repellendus quos, consectetur consequatur sint temporibus cupiditate numquam iste necessitatibus, libero facere hic.</p>
-       <h3 class="subHeading">Buttons</h3>
-       <h4 class="secondarySubHeading">Primary CTA</h4>
-       <button class="primaryCTA">Submit</button>
-       <h4 class="secondarySubHeading">Secondary CTA</h4>
-       <button class="secondaryCTA">Confirm</button>
-       <h4 class="secondarySubHeading">Alternate CTA</h4>
-       <button class="altCTA">Cancel</button>
-       <h3 class="subHeading">Text Input With a Label</h3>
-       <div class="inputContainer">
-        <label class="paragraphText">First Name</label>
-        <input class="input" placeholder="First Name"/>
-        <button class="primaryCTA">Submit</button>
-       </div>
-       <h3 class="subHeading">Image As a Link</h3>
-       <a href="https://github.com/harjotsk03/" target="_blank">
-        <img tabindex="0" class="image" src="./assets/logo.webp" height="500" width="500" alt="MotorVault Logo">
-       </a>
-    </section>
-    
-  
-    <section id="combined_elements">
-       <h2 class="secondaryHeading">Combined Elements</h2>
-       <h3 class="subHeading">Navigation</h3>
-       <nav class="nav">
-        <div class="navLeft">
-          <img class="navLogo" src="./assets/MotorVault_Logo_Transparent_processed.png">
-          <button class="navButton">Home</button>
-          <button class="navButton">Engine</button>
-          <button class="navButton">Brakes</button>
-          <button class="navButton">Suspension</button>
-          <button class="navButton">Steering</button>
-        </div>
-        <button class="navButton">Cart <i class="bi bi-cart"></i></button>
-       </nav>
-      <h3 class="subHeading">Product Listing</h3>
-      <div>
-        <img src="./assets/shopping.webp">
-        <h4 class="secondarySubHeading">Mufler</h4>
-        <p class="paragraphText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem maiores, eos tempore alias molestiae rerum repellat a, quae sunt deserunt id, tempora dolorum repudiandae iusto nihil illum quasi fugit. Non!</p>
-        <button class="blue">Buy</button>
       </div>
     </section>
-    
-    <section id="product_description">
-       <h2 class="secondaryHeading">Product Description</h2>
-       <h3 class="subHeading">Welcome to MotorVault: Your Trusted Source for Quality Car Parts</h3>
-       <p class="paragraphText">At MotorVault, we are passionate about keeping your vehicle running smoothly, efficiently, and reliably. Our e-commerce platform offers a vast selection of high-quality car parts, designed to cater to car enthusiasts, professional mechanics, and everyday drivers alike.</p>
-       <h3 class="subHeading">Why Choose MotorVault?</h3>
-      <p class="paragraphText">Extensive Selection: From essential engine components to exterior upgrades, we stock parts for a wide range of makes and models. Whether you’re repairing, maintaining, or customizing, we’ve got you covered.
-      Top Brands You Trust: We partner with leading manufacturers to bring you genuine, durable, and performance-tested products.
-      Competitive Pricing: Enjoy affordable prices without compromising on quality. Our deals and discounts make maintaining your vehicle budget-friendly.
-      Easy-to-Use Platform: With a streamlined search and categorization system, finding the right part for your car has never been easier.
-      Fast Shipping: Get the parts you need delivered quickly to your doorstep, so you can get back on the road in no time.
-      Expert Support: Have a question? Our knowledgeable team is here to assist with recommendations and technical guidance.</p>
-      <h3 class="subHeading">Our Mission</h3>
-      <p class="paragraphText">At MotorVault, our mission is to empower you to take control of your vehicle's performance and longevity. We strive to be your go-to destination for all your automotive needs, combining convenience, quality, and value in one trusted platform.</p>
-      <h3 class="subHeading">Products</h3>
-      <div>
-      <h4 class="secondarySubHeading">Engine Components</h4>
-      <p class="paragraphText">Alternators</p>
-      <p class="paragraphText">Starters</p>
-      <p class="paragraphText">Timing Belts</p>
-      <p class="paragraphText">Gaskets</p>
 
-      <h4 class="secondarySubHeading">Brakes</h4>
-      <p class="paragraphText">Brake Pads</p>
-      <p class="paragraphText">Brake Rotors</p>
-      <p class="paragraphText">Brake Calipers</p>
-
-      <h4 class="secondarySubHeading">Suspension & Steering</h4>
-      <p class="paragraphText">Shock Absorbers</p>
-      <p class="paragraphText">Control Arms</p>
-      <p class="paragraphText">Tie Rod Ends</p>
-
-      <!-- <h4>Electrical System</h4>
-      <p>Batteries</p>
-      <p>Ignition Coils</p>
-      <p>Spark Plugs</p>
-
-      <h4>Cooling & Heating</h4>
-      <p>Radiators</p>
-      <p>Thermostats</p>
-      <p>Water Pumps</p>
-
-      <h4>Fuel System</h4>
-      <p>Fuel Pumps</p>
-      <p>Fuel Injectors</p>
-      <p>Throttle Bodies</p>
-
-      <h4>Exhaust System</h4>
-      <p>Mufflers</p>
-      <p>Catalytic Converters</p>
-      <p>Oxygen Sensors</p>
-
-      <h4>Body & Exterior</h4>
-      <p>Headlights</p>
-      <p>Taillights</p>
-      <p>Windshield Wipers</p> -->
-    </div>
-
-      <h3 class="subHeading">Potential Images</h3>
-      <img src="./assets/shopping.webp">
-      <img src="./assets/shopping1.webp">
-      <img src="./assets/shopping2.webp">
-      <img src="./assets/shopping4.webp">
+    <section id="paletteFonts" class="page">
+      <h2 class="secondaryHeading mt-extra">Fonts</h2>
+      <div class="fontContainer">
+        <div class="fontShowCard">
+          <p class="mainHeading mt-xs">Heading One</p>
+          <p class="paragraphText">Poppins Bold</p>
+          <p class="paragraphText">44px / 48px</p>
+        </div>
+        <div class="fontShowCard">
+          <p class="secondaryHeading mt-xs">Heading Two</p>
+          <p class="paragraphText">Poppins SemiBold</p>
+          <p class="paragraphText">36px / 45px</p>
+        </div>
+        <div class="fontShowCard">
+          <p class="subHeading mt-xs">Heading Three</p>
+          <p class="paragraphText">Poppins Medium</p>
+          <p class="paragraphText">28px / 35px</p>
+        </div>
+        <div class="fontShowCard">
+          <p class="secondarySubHeading mt-xs">Heading Four</p>
+          <p class="paragraphText">Poppins Medium</p>
+          <p class="paragraphText">16px / 24px</p>
+        </div>
+        <div class="fontShowCard">
+          <p class="paragraphText mt-xs">Paragraph</p>
+          <p class="paragraphText">Poppins Regular</p>
+          <p class="paragraphText">16px / 24px</p>
+        </div>
+      </div>
     </section>
 
-    <section id="citations">
-       <h2 class="secondaryHeading" class="secondaryMainHeading">Citations</h2>
+    <footer class="footer">
+      <p class="footerText">Unboxed Living Style Guide</p>
+      <p class="footerText2">Created by Harjot Singh for IAT 339 Spring 2025</p>
+    </footer>
 
-      <ul>
-        <li>Matteson, Steve. Designer. 2011. <strong>Open Sans [Font]</strong>. Retrieved from <a href="https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans">https://www.google.com/fonts#QuickUsePlace:quickUse/Family:Open+Sans</a></li>
-        <li>OPENAI (AI Tool). (2025). <strong>Chat GPT</strong>. Retrieved from <a href="https://chatgpt.com/" target="_blank">https://chatgpt.com/</a>. Query: how can i put code as just text in side my html not as actual code</li>
-      </ul>
-
-    </section>
-
-
-
+    <script src="nav.js"></script>
   </body>
 </html>

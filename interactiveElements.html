@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise Harjot Singh</title>
+
+    <link href="./main.css" rel="stylesheet" />
+    <link href="./mobile.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navReal desktop">
+        <div class="navLeft">
+          <a class="navButton" href="./index.html">Colour & Fonts</a>
+          <a class="navButtonActive" href="./interactiveElements.html"
+            >Interactive Elements</a
+          >
+          <a class="navButton" href="./combinedElements.html"
+            >Combined Elements</a
+          >
+          <a class="navButton" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
+        </div>
+      </nav>
+      <nav class="navReal mobile">
+        <button id="navToggle" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <a id="closeButton" class="navButtonActive" href="javascript:void(0)">X Close</a>
+          <a class="navButton" href="./index.html">Colour & Fonts</a>
+          <a class="navButtonActive" href="./interactiveElements.html">Interactive Elements</a>
+          <a class="navButton" href="./combinedElements.html">Combined Elements</a>
+          <a class="navButton" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
+        </div>
+      </nav>
+      <section class="header">
+        <h1 class="mainHeading mt-extra">Unboxed Living  Style Guide</h1>
+        <p class="paragraphText">
+          Our style guide used to build the Unboxed Living  website.
+        </p>
+      </section>
+    </header>
+
+    <section class="page">
+      <h2 class="secondaryHeading mt-small">Text Elements</h2>
+      <h3 class="subHeading mt-s">Link within Paragraph</h3>
+      <p class="paragraphText mt-xs">
+        Lorem ipsum dolor sit amet
+        <a class="inTextLink" href="#">Link</a> consectetur adipisicing elit.
+        Maiores eaque voluptatum assumenda consequuntur sapiente! Quod
+        praesentium mollitia repellendus quos, consectetur consequatur sint
+        temporibus cupiditate numquam iste necessitatibus, libero facere hic.
+      </p>
+      <h3 class="subHeading mt-small">Link within Line</h3>
+      <p class="paragraphText mt-xs">
+        Lorem ipsum dolor sit amet
+        <a class="inTextLink" href="#">Link</a> consectetur adipisicing elit.
+      </p>
+    </section>
+
+    <section id="paletteFonts" class="page">
+      <h2 class="secondaryHeading mt-extra">Buttons</h2>
+      <p class="paragraphText mt-s">Examples</p>
+      <div class="buttonContainer mt-s">
+        <button class="altCTA">Default</button>
+        <button class="primaryCTA">Primary Action</button>
+        <button class="secondaryCTA">Caution</button>
+      </div>
+    </section>
+
+    <section id="paletteFonts" class="page">
+      <h2 class="secondaryHeading mt-extra">Inputs</h2>
+      <h3 class="subHeading mt-s">Text Input With a Label</h3>
+      <div class="inputContainer mt-s">
+        <label class="inputLabel">Email</label>
+        <div class="input-container">
+          <input class="input" placeholder="Email" type="email"/>
+          <button class="submit-button">Submit</button>
+        </div>
+      </div>
+    </section>
+   
+    <section id="paletteFonts" class="page">
+      <h2 class="secondaryHeading mt-extra">Image Elements</h2>
+      <h3 class="subHeading mt-s">Image As a Link</h3>
+      <a href="https://github.com/harjotsk03/" target="_blank">
+        <img
+          tabindex="0"
+          class="image mt-s"
+          src="./assets/Screenshot 2025-01-23 at 3.40.37 PM.png"
+          height="500"
+          width="500"
+          alt="Unboxed Living Logo"
+        />
+      </a>
+    </section>
+
+    
+
+    
+
+    <footer class="footer mt-extra">
+      <p class="footerText">Unboxed Living  Style Guide</p>
+      <p class="footerText2">Created by Harjot Singh for IAT 339 Spring 2025</p>
+    </footer>
+        <script src="nav.js"></script>
+  </body>
+</html>

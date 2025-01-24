@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Exercise Harjot Singh</title>
+
+    <link href="./main.css" rel="stylesheet" />
+    <link href="./mobile.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <nav class="navReal desktop">
+        <div class="navLeft">
+          <a class="navButton" href="./index.html">Colour & Fonts</a>
+          <a class="navButton" href="./interactiveElements.html"
+            >Interactive Elements</a
+          >
+          <a class="navButtonActive" href="./combinedElements.html"
+            >Combined Elements</a
+          >
+          <a class="navButton" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
+        </div>
+      </nav>
+      <nav class="navReal mobile">
+        <button id="navToggle" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+        <div id="navLinks" class="navLinks">
+          <a id="closeButton" class="navButtonActive" href="javascript:void(0)">X Close</a>
+          <a class="navButton" href="./index.html">Colour & Fonts</a>
+          <a class="navButton" href="./interactiveElements.html">Interactive Elements</a>
+          <a class="navButtonActive" href="./combinedElements.html">Combined Elements</a>
+          <a class="navButton" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
+        </div>
+      </nav>
+      <section class="header">
+        <h1 class="mainHeading mt-extra">Unboxed Living Style Guide</h1>
+        <p class="paragraphText">
+          Our style guide used to build the Unboxed Living website.
+        </p>
+      </section>
+    </header>
+
+    <section class="page">
+      <h2 class="secondaryHeading mt-small">Navigation</h2>
+      <nav class="nav desktop mt-small">
+        <div class="navLeft">
+          <a class="navButton" href="./index.html">Colour & Fonts</a>
+          <a class="navButton" href="./interactiveElements.html"
+            >Interactive Elements</a
+          >
+          <a class="navButton" href="./combinedElements.html"
+            >Combined Elements</a
+          >
+          <a class="navButtonActive" href="./product.html">Product Description</a>
+          <a class="navButton" href="./citations.html">Citations</a>
+        </div>
+      </nav>
+      <nav class="nav mobile">
+        <button id="navToggle" class="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </nav>
+    </section>
+
+    <section id="paletteFonts" class="page">
+      <h2 class="secondaryHeading mt-extra">Product Listing</h2>
+      <div class="productCard mt-small">
+        <button class="mufc2003"></button>
+        <div class="cardTextContainer">
+          <h4 class="secondarySubHeading mt-small">Coffee Table</h4>
+          <p class="productCardText mt-xs">
+            Low surface for the display of aesthetically pleasing objects and
+            publications for amelioration of status.
+          </p>
+          <div class="productCardButtons">
+            <button class="altCTA">View Product</button>
+            <button class="primaryCTA">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page">
+      <h2 class="secondaryHeading mt-extra">Contact Form</h2>
+      <div class="contactCard mt-small">
+          <h3 class="secondarySubHeading">Get in Touch</h3>
+          <p class="paragraphText mt-xs">
+            Send us an email and we will get in touch with you as soon as
+            possible!
+          </p>
+          <div class="inputContainer mt-s">
+            <label class="inputLabel">Full Name</label>
+            <input class="input" placeholder="Full Name" type="text" />
+          </div>
+          <div class="inputContainer mt-s">
+            <label class="inputLabel">Email</label>
+            <input class="input" placeholder="Email" type="email" />
+          </div>
+          <button class="submit-button mt-s">Submit</button>
+        </div>
+    </section>
+
+    <footer class="footer mt-extra">
+      <p class="footerText">Unboxed Living Style Guide</p>
+      <p class="footerText2">Created by Harjot Singh for IAT 339 Spring 2025</p>
+    </footer>
+        <script src="nav.js"></script>
+  </body>
+</html>
