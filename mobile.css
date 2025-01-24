@@ -391,6 +391,16 @@ margin-top: 4.75rem;
     width: 10rem;
 }
 
+.inTextLink{
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.1rem;
+  max-width: 75%;
+}
+
 }
 
 

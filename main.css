@@ -106,6 +106,16 @@ section{
   max-width: 75%;
 }
 
+.inTextLink{
+      font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.1rem;
+  max-width: 75%;
+}
+
 .inputContainer{
   display: flex;
   gap: 0.3rem;
