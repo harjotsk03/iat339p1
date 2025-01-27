@@ -168,7 +168,7 @@ font-family: "Poppins", sans-serif;
 
 .mobile{
   visibility: visible;
-  margin-top: -8rem;
+  /* margin-top: -8rem; */
 }
 
 .hamburger{
