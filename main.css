@@ -158,7 +158,6 @@ margin-top: 5.75rem;
   flex-direction: row;
   align-items: center;
   position: fixed;
-  
   top: 0;
   left: 0;
   width: 100%;
@@ -249,8 +248,8 @@ margin-top: 5.75rem;
 
 .primaryCTA:hover,
 .primaryCTA:focus{
-  background-color: #5c726b;
-  color: white;
+  background-color: #b7c9c3;
+  color: #142d26;
   cursor: pointer;
 }
 
@@ -269,7 +268,7 @@ margin-top: 5.75rem;
 
 .secondaryCTA:hover,
 .secondaryCTA:focus{
-  background-color: #9f7d3c;
+  background-color: #795f2e;
   color: white;
   cursor: pointer;
 }
@@ -289,8 +288,8 @@ margin-top: 5.75rem;
 
 .altCTA:hover,
 .altCTA:focus{
-  background-color: #f5f5f5;
-  color: black;
+  background-color: #5b5858;
+  color: white;
   cursor: pointer;
 }
 
@@ -321,6 +320,14 @@ margin-top: 5.75rem;
   padding: 0.5rem 0.75rem;
   border-radius: 0.4rem;
   border: 0.1rem solid #23473c;
+  transition: 0.3s ease-in-out all;
+}
+
+.input:hover,
+.input:focus{
+  background-color: #23473c;
+  color: white;
+  border: 0.1rem solid white;
 }
 
 .submit-button{
@@ -338,8 +345,8 @@ margin-top: 5.75rem;
 
 .submit-button:hover,
 .submit-button:focus{
-  background-color: #5c726b;
-  color: white;
+  background-color: #b7c9c3;
+  color: #142d26;
   cursor: pointer;
 }
 
@@ -379,6 +386,8 @@ margin-top: 5.75rem;
   overflow: hidden;
   object-position: center;
   transition: 0.3s ease-in-out all;
+  border: 2rem solid #142d26;
+  border-radius: 1rem;
 }
 
 .image:focus,
