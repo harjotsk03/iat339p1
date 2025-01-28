@@ -38,9 +38,7 @@
           <span class="line"></span>
         </button>
         <div id="navLinks" class="navLinks">
-          <a id="closeButton" class="navButtonActive" href="javascript:void(0)"
-            >X Close</a
-          >
+          <button id="closeButton" class="navButtonActive">X Close</button>
           <a class="navButton" href="./index.html">Colour & Fonts</a>
           <a class="navButton" href="./interactiveElements.html"
             >Interactive Elements</a
@@ -52,7 +50,7 @@
           <a class="navButton" href="./citations.html">Citations</a>
         </div>
       </nav>
-      <section class="header">
+      <section id="headerSection" class="header">
         <h1 class="mainHeading mt-extra">Unboxed Living Style Guide</h1>
         <p class="paragraphText">
           Our style guide used to build the Unboxed Living website.
@@ -60,7 +58,7 @@
       </section>
     </header>
 
-    <section class="page">
+    <section id="navigationSection" class="page">
       <h2 class="secondaryHeading mt-small">Navigation</h2>
       <nav class="nav desktop mt-small">
         <div class="navLeft">
@@ -72,7 +70,11 @@
         </div>
       </nav>
       <nav class="nav mobile">
-        <button aria-label="mobileNagivationButton" id="navToggleShow" class="hamburger">
+        <button
+          aria-label="mobileNagivationButton"
+          id="navToggleShow"
+          class="hamburger"
+        >
           <span class="line"></span>
           <span class="line"></span>
           <span class="line"></span>
@@ -80,12 +82,15 @@
       </nav>
     </section>
 
-    <section id="paletteFonts" class="page">
+    <section id="productListingSection" class="page">
       <h2 class="secondaryHeading mt-extra">Product Listing</h2>
       <div class="productCard mt-small">
-        <button aria-label="clickableImageOptionProductCard" class="table1ImageContainer"></button>
+        <button
+          aria-label="clickableImageOptionProductCard"
+          class="table1ImageContainer"
+        ></button>
         <div class="cardTextContainer">
-          <h4 class="secondarySubHeading mt-small">Coffee Table</h4>
+          <h3 class="secondarySubHeading mt-small">Coffee Table</h3>
           <p class="productCardText mt-xs">
             Low surface for the display of aesthetically pleasing objects and
             publications for amelioration of status.
@@ -98,7 +103,7 @@
       </div>
     </section>
 
-    <section class="page">
+    <section id="contactFormSection" class="page">
       <h2 class="secondaryHeading mt-extra">Contact Form</h2>
       <div class="contactCard mt-small">
         <h3 class="secondarySubHeading">Get in Touch</h3>
@@ -108,11 +113,21 @@
         </p>
         <div class="inputContainer mt-s">
           <label for="nameInput" class="inputLabel">Full Name</label>
-          <input id="nameInput" class="input" placeholder="Please enter your full Name" type="text" />
+          <input
+            id="nameInput"
+            class="input"
+            placeholder="Please enter your full Name"
+            type="text"
+          />
         </div>
         <div class="inputContainer mt-s">
           <label for="emailInput" class="inputLabel">Email</label>
-          <input id="emailInput" class="input" placeholder="Please enter your email" type="email" />
+          <input
+            id="emailInput"
+            class="input"
+            placeholder="Please enter your email"
+            type="email"
+          />
         </div>
         <button class="submit-button mt-s">Submit</button>
       </div>
