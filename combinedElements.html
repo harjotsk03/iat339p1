@@ -28,10 +28,14 @@
         </div>
       </nav>
       <nav class="navReal mobile">
-        <button id="navToggle" class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <button
+          id="navToggle"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </button>
         <div id="navLinks" class="navLinks">
           <a id="closeButton" class="navButtonActive" href="javascript:void(0)"
@@ -69,9 +73,9 @@
       </nav>
       <nav class="nav mobile">
         <button id="navToggle" class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </button>
       </nav>
     </section>
@@ -79,7 +83,7 @@
     <section id="paletteFonts" class="page">
       <h2 class="secondaryHeading mt-extra">Product Listing</h2>
       <div class="productCard mt-small">
-        <button class="mufc2003"></button>
+        <button class="table1ImageContainer"></button>
         <div class="cardTextContainer">
           <h4 class="secondarySubHeading mt-small">Coffee Table</h4>
           <p class="productCardText mt-xs">
@@ -103,12 +107,12 @@
           possible!
         </p>
         <div class="inputContainer mt-s">
-          <label class="inputLabel">Full Name</label>
-          <input class="input" placeholder="Full Name" type="text" />
+          <label for="nameInput" class="inputLabel">Full Name</label>
+          <input id="nameInput" class="input" placeholder="Please enter your full Name" type="text" />
         </div>
         <div class="inputContainer mt-s">
-          <label class="inputLabel">Email</label>
-          <input class="input" placeholder="Email" type="email" />
+          <label for="emailInput" class="inputLabel">Email</label>
+          <input id="emailInput" class="input" placeholder="Please enter your email" type="email" />
         </div>
         <button class="submit-button mt-s">Submit</button>
       </div>

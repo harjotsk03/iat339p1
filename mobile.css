@@ -334,19 +334,19 @@ margin-top: 4.75rem;
   color: #55575a;
 }
 
-.mufc2003 {
+.table1ImageContainer {
   width: 100%;
   border: none;
   height: 20rem;
-  background-image: url(./assets/Screenshot\ 2025-01-23\ at\ 3.40.37\ PM.png);
+  background-image: url(./assets/tableImg1.png);
   background-size: cover;
   background-position: center;
   border-radius: 0.75rem 0.75rem 0rem 0rem;
   transition: background-image 0.3s ease; /* Smooth transition */
 }
 
-.productCard:hover .mufc2003 {
-  background-image: url(./assets/Screenshot\ 2025-01-23\ at\ 3.40.47\ PM.png);
+.productCard:hover .table1ImageContainer {
+  background-image: url(./assets/tableImg2.png);
   cursor: pointer;
 }
 
@@ -737,19 +737,19 @@ margin-top: 4.75rem;
   color: #55575a;
 }
 
-.mufc2003 {
+.table1ImageContainer {
   width: 100%;
   border: none;
   height: 20rem;
-  background-image: url(./assets/Screenshot\ 2025-01-23\ at\ 3.40.37\ PM.png);
+  background-image: url(./assets/tableImg1.png);
   background-size: cover;
   background-position: center;
   border-radius: 0.75rem 0.75rem 0rem 0rem;
   transition: background-image 0.3s ease; /* Smooth transition */
 }
 
-.productCard:hover .mufc2003 {
-  background-image: url(./assets/Screenshot\ 2025-01-23\ at\ 3.40.47\ PM.png);
+.productCard:hover .table1ImageContainer {
+  background-image: url(./assets/tableImg2.png);
   cursor: pointer;
 }
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unboxed Living Style Guide</title>
 
     <link href="./main.css" rel="stylesheet" />
@@ -28,29 +28,40 @@
         </div>
       </nav>
       <nav class="navReal mobile">
-        <button id="navToggle" class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
+        <button
+          id="navToggle"
+          class="hamburger"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
         </button>
         <div id="navLinks" class="navLinks">
-          <a id="closeButton" class="navButtonActive" href="javascript:void(0)">X Close</a>
+          <a id="closeButton" class="navButtonActive" href="javascript:void(0)"
+            >X Close</a
+          >
           <a class="navButton" href="./index.html">Colour & Fonts</a>
-          <a class="navButtonActive" href="./interactiveElements.html">Interactive Elements</a>
-          <a class="navButton" href="./combinedElements.html">Combined Elements</a>
+          <a class="navButtonActive" href="./interactiveElements.html"
+            >Interactive Elements</a
+          >
+          <a class="navButton" href="./combinedElements.html"
+            >Combined Elements</a
+          >
           <a class="navButton" href="./product.html">Product Description</a>
           <a class="navButton" href="./citations.html">Citations</a>
         </div>
       </nav>
-      <section class="header">
-        <h1 class="mainHeading mt-extra">Unboxed Living  Style Guide</h1>
+
+      <section id="headerSection" class="header">
+        <h1 class="mainHeading mt-extra">Unboxed Living Style Guide</h1>
         <p class="paragraphText">
-          Our style guide used to build the Unboxed Living  website.
+          Our style guide used to build the Unboxed Living website.
         </p>
       </section>
     </header>
 
-    <section class="page">
+    <section id="textElementsSection" class="page">
       <h2 class="secondaryHeading mt-small">Text Elements</h2>
       <h3 class="subHeading mt-s">Link within Paragraph</h3>
       <p class="paragraphText mt-xs">
@@ -67,7 +78,7 @@
       </p>
     </section>
 
-    <section id="paletteFonts" class="page">
+    <section id="buttonsSection" class="page">
       <h2 class="secondaryHeading mt-extra">Buttons</h2>
       <p class="paragraphText mt-s">Examples</p>
       <div class="buttonContainer mt-s">
@@ -77,41 +88,37 @@
       </div>
     </section>
 
-    <section id="paletteFonts" class="page">
+    <section id="inputsSection" class="page">
       <h2 class="secondaryHeading mt-extra">Inputs</h2>
       <h3 class="subHeading mt-s">Text Input With a Label</h3>
       <div class="inputContainer mt-s">
-        <label class="inputLabel">Email</label>
+        <label for="email" class="inputLabel">Email</label>
         <div class="input-container">
-          <input class="input" placeholder="Email" type="email"/>
+          <input id="email" class="input" placeholder="Enter your email" type="email" />
           <button class="submit-button">Submit</button>
         </div>
       </div>
     </section>
-   
-    <section id="paletteFonts" class="page">
+
+    <section id="imageElementsSection" class="page">
       <h2 class="secondaryHeading mt-extra">Image Elements</h2>
       <h3 class="subHeading mt-s">Image As a Link</h3>
       <a href="https://github.com/harjotsk03/" class="mt-s" target="_blank">
         <img
           tabindex="0"
           class="image"
-          src="./assets/Screenshot 2025-01-23 at 3.40.37 PM.png"
+          src="./assets/chair2Img1.png"
           height="500"
           width="500"
-          alt="Unboxed Living Logo"
+          alt="Image of one of the blue two seater chairs we sell."
         />
       </a>
     </section>
 
-    
-
-    
-
     <footer class="footer mt-extra">
-      <p class="footerText">Unboxed Living  Style Guide</p>
+      <p class="footerText">Unboxed Living Style Guide</p>
       <p class="footerText2">Created by Harjot Singh for IAT 339 Spring 2025</p>
     </footer>
-        <script src="nav.js"></script>
+    <script src="nav.js"></script>
   </body>
 </html>
