@@ -176,7 +176,6 @@ margin-top: 5.75rem;
   gap: 1rem;
 }
 
-/* Hamburger menu styles */
 .hamburger {
   display: none;
   font-size: 2rem;
@@ -379,19 +378,24 @@ margin-top: 5.75rem;
   outline: none;
 }
 
-.image{
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.imageLink {
+  display: block;
   width: 20rem;
   height: 20rem;
-  object-fit: contain;
-  overflow: hidden;
-  object-position: center;
   transition: 0.3s ease-in-out all;
   border: 2rem solid #142d26;
   border-radius: 1rem;
 }
 
-.image:focus,
-.image:hover{
+.imageLink:focus,
+.imageLink:hover {
   border-radius: 4rem;
 }
 
@@ -496,7 +500,7 @@ font-family: "Poppins", sans-serif;
   width: 25rem;
   background: #fafafa;
   border-radius: 0.5rem;
-  position: relative; /* Ensure positioning for child elements */
+  position: relative;
 }
 
 .productCard img {

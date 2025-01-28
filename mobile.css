@@ -168,7 +168,6 @@ font-family: "Poppins", sans-serif;
 
 .mobile{
   visibility: visible;
-  /* margin-top: -8rem; */
 }
 
 .hamburger{
@@ -342,7 +341,7 @@ margin-top: 4.75rem;
   background-size: cover;
   background-position: center;
   border-radius: 0.75rem 0.75rem 0rem 0rem;
-  transition: background-image 0.3s ease; /* Smooth transition */
+  transition: background-image 0.3s ease;
 }
 
 .productCard:hover .table1ImageContainer {
@@ -745,7 +744,7 @@ margin-top: 4.75rem;
   background-size: cover;
   background-position: center;
   border-radius: 0.75rem 0.75rem 0rem 0rem;
-  transition: background-image 0.3s ease; /* Smooth transition */
+  transition: background-image 0.3s ease;
 }
 
 .productCard:hover .table1ImageContainer {
